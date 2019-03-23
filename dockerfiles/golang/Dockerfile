@@ -38,7 +38,7 @@ RUN apt-get update && apt-get install -y \
 	git \
 	openssh-client \ 
 	locales && \
-	apt-get clean &&\
+	apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
     echo "$TZ" > /etc/timezone && \
     ln -fs /usr/share/zoneinfo/$TZ /etc/localtime && \
